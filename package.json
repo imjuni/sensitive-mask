@@ -1,6 +1,6 @@
 {
   "name": "sensitive-mask",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Sensitive information mask utility",
   "main": "index.js",
   "files": [
@@ -11,13 +11,15 @@
     "clean": "rimraf dist",
     "transpile": "tsc",
     "pretranspile:prod": "npm run clean",
-    "transpile:prod": "tsc -p tsconfig.prod.json"
+    "transpile:prod": "tsc -p tsconfig.prod.json",
+    "prepub": "npm run transpile:prod",
+    "pub": "npm publish"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/imjuni/sensitive-mask.git"
   },
-  "author": "",
+  "author": "ByungJoon Lee",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/imjuni/sensitive-mask/issues"
@@ -43,5 +45,6 @@
     "rimraf": "^2.6.2",
     "ts-jest": "^21.1.4",
     "typescript": "^2.6.1"
-  }
+  },
+  "dependencies": {}
 }
