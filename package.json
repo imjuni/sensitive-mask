@@ -1,8 +1,9 @@
 {
   "name": "sensitive-mask",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "description": "Sensitive information mask utility",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
   "files": [
     "dist"
   ],

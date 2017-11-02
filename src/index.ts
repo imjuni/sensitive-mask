@@ -4,7 +4,7 @@ import { IMasker } from './IMasker';
 export * from './IMasker';
 export * from './MASK_TYPE';
 
-export default function Masker(i18n: string = 'ko', maskChar: string = '*'): IMasker {
+export function Masker(i18n: string = 'ko', maskChar: string = '*'): IMasker {
   if (i18n === 'ko') {
     return new ko(maskChar);
   }
