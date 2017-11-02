@@ -1,0 +1,47 @@
+{
+  "name": "sensitive-mask",
+  "version": "0.1.0",
+  "description": "Sensitive information mask utility",
+  "main": "index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "jest",
+    "clean": "rimraf dist",
+    "transpile": "tsc",
+    "pretranspile:prod": "npm run clean",
+    "transpile:prod": "tsc -p tsconfig.prod.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imjuni/sensitive-mask.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/imjuni/sensitive-mask/issues"
+  },
+  "homepage": "https://github.com/imjuni/sensitive-mask#readme",
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.(ts|tsx)$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testMatch": [
+      "**/__tests__/*.(ts|tsx|js)"
+    ]
+  },
+  "devDependencies": {
+    "@types/jest": "^21.1.5",
+    "@types/node": "^8.0.47",
+    "jest": "^21.2.1",
+    "rimraf": "^2.6.2",
+    "ts-jest": "^21.1.4",
+    "typescript": "^2.6.1"
+  }
+}
